@@ -954,8 +954,8 @@ header.scrolled {
 
 .schedule-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .branch-card {
@@ -1159,6 +1159,16 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .header-cta-wrapper {
+    display: none;
+  }
+  .pet-card {
+    padding: 20px;
+  }
+  .hero-title {
+    font-size: 2.2rem !important;
+    line-height: 1.2;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 40px;
