@@ -945,6 +945,37 @@ header.scrolled {
   }
 }
 
+/* Shared Schedule Banner under Section Header */
+.schedule-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: var(--bg-primary);
+  border: 1px dashed rgba(37, 99, 235, 0.2);
+  border-radius: var(--border-radius-sm);
+  padding: 18px;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 0.92rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.schedule-banner-item {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.schedule-banner-item svg {
+  flex-shrink: 0;
+}
+
+.schedule-banner-item strong {
+  color: var(--text-primary);
+  margin-right: 5px;
+}
+
 /* ==========================================================================
    OFFICIAL CHANNELS & SCHEDULES SECTION
    ========================================================================== */
@@ -1163,11 +1194,11 @@ footer {
     display: none;
   }
   .pet-card {
-    padding: 20px;
+    padding: 15px !important;
   }
   .hero-title {
-    font-size: 2.2rem !important;
-    line-height: 1.2;
+    font-size: 2.1rem !important;
+    line-height: 1.25;
   }
   .footer-grid {
     grid-template-columns: 1fr;
@@ -1176,6 +1207,143 @@ footer {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+  
+  /* Compact global sections on mobile */
+  .section-padding {
+    padding: 40px 0 !important;
+  }
+  .section-header {
+    margin-bottom: 25px !important;
+  }
+  .section-title {
+    font-size: 1.8rem !important;
+  }
+  
+  /* Compact branch cards grid for mobile (2x2 layout) */
+  .schedule-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+  .branch-card {
+    padding: 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    min-height: 170px !important;
+  }
+  .branch-card .branch-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    margin-bottom: 8px !important;
+  }
+  .branch-card .branch-header .badge {
+    display: none !important;
+  }
+  .branch-card .tape-heading {
+    font-size: 0.72rem !important;
+    padding: 4px 8px !important;
+    transform: none !important;
+    margin-bottom: 0 !important;
+  }
+  .branch-address {
+    font-size: 0.7rem !important;
+    margin-bottom: 10px !important;
+    line-height: 1.25;
+    gap: 4px !important;
+  }
+  .branch-address svg {
+    display: none !important;
+  }
+  .branch-cta-btn {
+    margin-top: auto !important;
+    padding: 8px 10px !important;
+    font-size: 0.72rem !important;
+    width: 100% !important;
+  }
+  
+  /* Schedule Banner adjustments on mobile */
+  .schedule-banner {
+    padding: 12px !important;
+    font-size: 0.8rem !important;
+    gap: 8px !important;
+  }
+  
+  /* Hero section adjustments for mobile */
+  .hero {
+    min-height: auto !important;
+    padding: 110px 0 40px !important;
+  }
+  .hero-description {
+    font-size: 0.95rem !important;
+    margin-bottom: 25px !important;
+  }
+  
+  /* Features grid margin */
+  .features-grid {
+    gap: 16px !important;
+  }
+  .feature-icon-wrapper {
+    margin-bottom: 12px !important;
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 1.2rem !important;
+  }
+  .feature-title {
+    font-size: 1.1rem !important;
+    margin-bottom: 6px !important;
+  }
+  .feature-description {
+    font-size: 0.85rem !important;
+  }
+
+  /* Catalog inventory compact layout */
+  .catalog-inventory-card {
+    padding: 16px !important;
+  }
+  .product-row {
+    padding-bottom: 12px !important;
+    gap: 12px !important;
+  }
+  .product-img-placeholder {
+    width: 45px !important;
+    height: 55px !important;
+  }
+  .product-details h4 {
+    font-size: 0.9rem !important;
+  }
+  .product-details p {
+    font-size: 0.75rem !important;
+  }
+  .product-pricing-control {
+    gap: 15px !important;
+  }
+  .product-unit-price {
+    font-size: 0.95rem !important;
+    width: auto !important;
+  }
+  .qty-btn {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .qty-val {
+    width: 30px !important;
+  }
+  
+  /* Simulator ticket compact layout */
+  .order-sheet {
+    padding: 16px !important;
+  }
+  .order-sheet-title {
+    font-size: 1.2rem !important;
+  }
+  .order-sheet-body {
+    min-height: auto !important;
+    margin-bottom: 15px !important;
+  }
+  .order-total-val {
+    font-size: 1.4rem !important;
   }
 }
 
