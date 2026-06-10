@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <!-- Text path for curved top brand name -->
+    <path id="curve-text" d="M 45 150 A 105 105 0 0 1 255 150" fill="none" />
+    
+    <!-- Shadow filter for premium logo badge look -->
+    <filter id="badge-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Base Badge White Circle with red-brown outline -->
+  <circle cx="150" cy="150" r="135" fill="#ffffff" filter="url(#badge-shadow)" />
+  <circle cx="150" cy="150" r="128" fill="none" stroke="#e11d48" stroke-width="4" />
+  <circle cx="150" cy="150" r="122" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6" />
+
+  <!-- Curved Text "POCAS PULGAS" -->
+  <text font-family="'Outfit', 'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="21" fill="#1e293b" letter-spacing="1">
+    <textPath href="#curve-text" startOffset="50%" text-anchor="middle">
+      POCAS PULGAS
+    </textPath>
+  </text>
+
+  <!-- Bulldog Cartoon Mascot (Centered) -->
+  <g transform="translate(150, 165)">
+    <!-- Collar (Red with gold tag/spikes) -->
+    <path d="M -50 -10 C -50 20, 50 20, 50 -10 C 60 15, -60 15, -50 -10 Z" fill="#e11d48" stroke="#1e293b" stroke-width="3" />
+    <!-- Spikes on collar -->
+    <polygon points="-40,-2 -36,12 -30,0" fill="#f59e0b" stroke="#1e293b" stroke-width="1" />
+    <polygon points="-20,6 -18,22 -12,8" fill="#f59e0b" stroke="#1e293b" stroke-width="1" />
+    <polygon points="0,9 0,25 6,10" fill="#f59e0b" stroke="#1e293b" stroke-width="1" />
+    <polygon points="20,6 18,22 12,8" fill="#f59e0b" stroke="#1e293b" stroke-width="1" />
+    <polygon points="40,-2 36,12 30,0" fill="#f59e0b" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Bulldog Head Base (Tan/Brown) -->
+    <path d="M -60 -45 
+             C -60 -80, -40 -90, 0 -90 
+             C 40 -90, 60 -80, 60 -45 
+             C 65 -20, 55 5, 45 10
+             C 25 15, -25 15, -45 10
+             C -55 5, -65 -20, -60 -45 Z" 
+          fill="#d4a373" stroke="#1e293b" stroke-width="3" />
+
+    <!-- Left Ear (Droopy brown) -->
+    <path d="M -55 -75 C -75 -65, -80 -30, -55 -40 Z" fill="#b98250" stroke="#1e293b" stroke-width="3" />
+    <!-- Right Ear (Droopy brown) -->
+    <path d="M 55 -75 C 75 -65, 80 -30, 55 -40 Z" fill="#b98250" stroke="#1e293b" stroke-width="3" />
+
+    <!-- Forehead Wrinkles -->
+    <path d="M -20 -75 Q 0 -70, 20 -75" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+    <path d="M -15 -68 Q 0 -63, 15 -68" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+    <path d="M -25 -50 Q 0 -45, 25 -50" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Cheeks/Jowls (Puffy white/cream sides) -->
+    <path d="M -45 -35 C -55 -30, -55 5, -25 5 C -15 5, -10 -5, 0 -5 C 10 -5, 15 5, 25 5 C 55 5, 55 -30, 45 -35 C 35 -40, -35 -40, -45 -35 Z" fill="#f8fafc" stroke="#1e293b" stroke-width="3" />
+
+    <!-- Bulldog Eyes (Determined look) -->
+    <!-- Left Eye -->
+    <path d="M -35 -52 C -25 -55, -20 -48, -30 -45 Z" fill="#ffffff" stroke="#1e293b" stroke-width="2.5" />
+    <circle cx="-27" cy="-48" r="4.5" fill="#1e293b" />
+    <path d="M -37 -55 L -23 -51" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" /> <!-- Brow -->
+    
+    <!-- Right Eye -->
+    <path d="M 35 -52 C 25 -55, 20 -48, 30 -45 Z" fill="#ffffff" stroke="#1e293b" stroke-width="2.5" />
+    <circle cx="27" cy="-48" r="4.5" fill="#1e293b" />
+    <path d="M 37 -55 L 23 -51" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" /> <!-- Brow -->
+
+    <!-- Nose (Black curved triangle) -->
+    <path d="M -14 -28 C -14 -35, 14 -35, 14 -28 C 14 -16, -14 -16, -14 -28 Z" fill="#1e293b" />
+    <path d="M 0 -18 L 0 -8" stroke="#1e293b" stroke-width="2.5" />
+
+    <!-- Mouth/Underbite details -->
+    <!-- Little teeth sticking out (Bulldog underbite) -->
+    <polygon points="-12,6 -8,-2 -4,6" fill="#ffffff" stroke="#1e293b" stroke-width="1.5" />
+    <polygon points="12,6 8,-2 4,6" fill="#ffffff" stroke="#1e293b" stroke-width="1.5" />
+  </g>
+
+  <!-- Lower Text: "DISTRIBUIDORA" -->
+  <text x="150" y="274" 
+        text-anchor="middle" 
+        font-family="'Outfit', 'Inter', sans-serif" 
+        font-weight="700" 
+        font-size="12" 
+        fill="#2563eb" 
+        letter-spacing="4">
+    DISTRIBUIDORA
+  </text>
+</svg>

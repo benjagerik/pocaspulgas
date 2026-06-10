@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pocas Pulgas Distribuidora. Mayorista oficial de alimento para mascotas Master Crock en el NEA (Nordeste Argentino). Abastecimiento para Pet Shops y Veterinarias.">
+  <title>Pocas Pulgas | Distribuidora Mayorista Oficial Master Crock</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER / NAVIGATION
+       ========================================================================== -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo-wrapper">
+        <img src="logo.png" alt="Pocas Pulgas Logo" class="logo-icon">
+        <div class="logo-text">
+          POCAS PULGAS
+          <span>Distribuidora Mayorista</span>
+        </div>
+      </a>
+      
+      <nav class="nav-links">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#emprender" class="nav-link">Emprender</a>
+        <a href="#catalogo" class="nav-link">Catálogo B2B</a>
+        <a href="#horarios" class="nav-link">Horarios</a>
+      </nav>
+      
+      <div>
+        <a href="#catalogo" class="btn btn-primary" style="padding: 10px 20px; border-radius: var(--border-radius-sm);">Hacer Pedido</a>
+      </div>
+      
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+    <a href="#inicio" class="mobile-nav-link">Inicio</a>
+    <a href="#emprender" class="mobile-nav-link">Emprender</a>
+    <a href="#catalogo" class="mobile-nav-link">Catálogo B2B</a>
+    <a href="#horarios" class="mobile-nav-link">Horarios</a>
+    <a href="#catalogo" class="btn btn-primary" style="margin-top: 20px;">Hacer Pedido</a>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="inicio">
+    <!-- Background Image -->
+    <div class="hero-bg-wrapper">
+      <img src="pet_food_hero.png" alt="Distribuidora de alimento para mascotas Master Crock" class="hero-bg-image">
+      <div class="hero-bg-overlay"></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge badge-red">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          Sólo Venta Mayorista
+        </span>
+        <h1 class="hero-title">Tu Distribuidora<br>Mayorista del <span>NEA</span></h1>
+        <p class="hero-description">
+          Somos distribuidores oficiales de <strong>Master Crock</strong>. Abastecemos a veterinarias, pet shops y emprendedores de la región con stock permanente y entregas coordinadas.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="#catalogo" class="btn btn-primary">Simular Pedido B2B</a>
+          <a href="https://wa.me/5493624123456?text=Hola!%20Me%20interesa%20asociarme%20como%20comercio%20para%20comprar%20alimento%20para%20mascotas%20por%20mayor." class="btn btn-whatsapp" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 2px;">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.73-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.588 1.981 14.117.96 11.493.96 6.058.96 1.633 5.33 1.629 10.76a9.617 9.617 0 0 0 1.5 5.17l-.985 3.597 3.703-.973zm13.167-7.223c-.322-.16-1.905-.938-2.2-1.044-.295-.107-.51-.16-.724.16-.213.32-.827 1.044-1.013 1.258-.185.213-.37.24-.692.08-1.548-.773-2.555-1.353-3.565-3.08-.266-.456.266-.423.76-.1.444.29.56.375.69.585.13.21.065.39-.033.55-.1-.16-.725-1.748-.993-2.39-.26-.624-.526-.54-.724-.55l-.617-.01c-.213 0-.56.08-.853.4-.293.32-1.12 1.092-1.12 2.66 0 1.57 1.147 3.09 1.307 3.297.16.207 2.257 3.447 5.47 4.83.763.328 1.36.525 1.822.67.767.243 1.467.21 2.018.128.614-.09 1.905-.777 2.174-1.492.27-.715.27-1.328.186-1.454-.084-.127-.295-.207-.616-.367z"/>
+            </svg>
+            Contactar Asesor B2B
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURES / BENEFITS
+       ========================================================================== -->
+  <section class="section-padding" id="emprender">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Únete a nuestra familia TCG</span>
+        <h2 class="section-title">Hacemos crecer tu negocio de mascotas</h2>
+        <p style="color: var(--text-secondary);">Soporte, calidad y rentabilidad directa para tu pet shop o veterinaria.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Benefit 1 -->
+        <div class="pet-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3 class="feature-title">Productos de Alta Calidad</h3>
+          <p class="feature-description">
+            Abastece tus góndolas con Master Crock, alimento balanceado con altos valores nutricionales y gran nivel de aceptación por los clientes.
+          </p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="pet-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Emprende con Seguridad</h3>
+          <p class="feature-description">
+            Al asociarte como punto de venta oficial, obtienes márgenes de ganancia sumamente atractivos y el respaldo de una marca reconocida.
+          </p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="pet-card feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title">Asesoramiento Exclusivo</h3>
+          <p class="feature-description">
+            Te guiamos en la elección del stock inicial, proveemos material promocional para tu local y te asignamos un asesor comercial exclusivo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PARTNER BRAND AREA
+       ========================================================================== -->
+  <section class="section-padding brand-showcase">
+    <div class="container brand-grid">
+      <div class="brand-text">
+        <span class="badge badge-red">Distribuidor Oficial</span>
+        <h2 class="section-title">Línea de Nutrición Master Crock</h2>
+        <p style="color: var(--text-secondary);">
+          Somos el principal nexo de distribución de Master Crock en todo el NEA. Garantizamos stock permanente de todas las gamas de la marca.
+        </p>
+        <div class="brand-bullets">
+          <div class="bullet-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Línea Perro Adulto y Cachorro (20kg / 15kg)
+          </div>
+          <div class="bullet-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Línea Gato Adulto y Cachorro (10kg)
+          </div>
+          <div class="bullet-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Línea Húmeda en Latas (Pack x12)
+          </div>
+        </div>
+      </div>
+      
+      <div class="brand-visual">
+        <div class="brand-logo-mockup">Master<span>Crock</span></div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; font-weight:700;">NUTRICIÓN ANIMAL INTELIGENTE</p>
+        <div style="display:flex; justify-content:center; gap: 15px; margin-top: 25px;">
+          <span style="font-size:0.75rem; background:rgba(15,23,42,0.05); padding: 6px 12px; border-radius:4px; font-weight:700;">Alta Palatabilidad</span>
+          <span style="font-size:0.75rem; background:rgba(15,23,42,0.05); padding: 6px 12px; border-radius:4px; font-weight:700;">Fórmula Premium</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       B2B ORDER SHEET SIMULATOR
+       ========================================================================== -->
+  <section class="section-padding" id="catalogo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Portal Mayorista</span>
+        <h2 class="section-title">Simulador de Pedido B2B</h2>
+        <p style="color: var(--text-secondary);">Selecciona la cantidad de bolsas para tu comercio y calcula el descuento por volumen en tiempo real.</p>
+      </div>
+
+      <div class="order-simulator-layout">
+        <!-- Left: Product list -->
+        <div class="pet-card catalog-inventory-card">
+          <h3 class="catalog-title">Catálogo Mayorista Disp.</h3>
+          
+          <div class="products-table-list" id="products-table-list">
+            <!-- JS will inject product rows here -->
+          </div>
+        </div>
+
+        <!-- Right: Professional Order Sheet -->
+        <div class="order-sheet-wrapper">
+          <div class="order-sheet" id="order-sheet">
+            
+            <div class="order-sheet-header">
+              <div class="order-sheet-logo-row">
+                <img src="logo.png" alt="Pocas Pulgas Logo">
+                <span class="order-sheet-badge-title">Mayorista</span>
+              </div>
+              <h3 class="order-sheet-title">Nota de Pedido B2B</h3>
+              
+              <div class="order-sheet-meta">
+                <div>SOLICITUD: <span id="order-code-num">PED-592182</span></div>
+                <div>FECHA: <span id="order-date">10 de junio, 2026</span></div>
+              </div>
+            </div>
+
+            <div class="order-sheet-body">
+              <!-- Customer Inputs -->
+              <div class="order-client-info">
+                <input type="text" id="b2b-client-name" class="order-input-field" placeholder="Nombre de tu Veterinaria / Pet Shop">
+                <input type="text" id="b2b-client-location" class="order-input-field" placeholder="Localidad / Provincia (NEA)">
+                <select id="b2b-branch-select" class="order-input-field order-select-field">
+                  <option value="" disabled>Selecciona la sucursal de contacto</option>
+                  <option value="haacwa" selected>Sucursal Resistencia | Corrientes</option>
+                  <option value="x7z7wo">Sucursal Formosa Capital | Interior del Chaco</option>
+                  <option value="d0jr2f">Sucursal Interior de Formosa</option>
+                  <option value="927k7w">Contacto Veterinaria (Barranqueras)</option>
+                </select>
+              </div>
+
+              <!-- Ticket Client Line -->
+              <div id="order-sheet-client" class="order-sheet-client-text"></div>
+
+              <!-- Cart items details -->
+              <div class="order-items-list" id="order-items-list">
+                <!-- Javascript will list cart items here -->
+              </div>
+            </div>
+
+            <!-- Volume Discount Tier Progress Bar -->
+            <div class="volume-discount-indicator" id="discount-indicator">
+              <div class="discount-bar-info">
+                <span id="discount-bar-text">¡Suma 10 bolsas para habilitar tu orden!</span>
+              </div>
+              <div class="discount-progress-bg">
+                <div class="discount-progress-fill" id="discount-bar-fill"></div>
+              </div>
+            </div>
+
+            <!-- Totals -->
+            <div class="order-total-section">
+              <span class="order-total-label">Total Pedido:</span>
+              <span class="order-total-val" id="order-total-value">$0</span>
+            </div>
+
+            <!-- Actions -->
+            <div class="order-actions" style="margin-top: 24px;">
+              <a href="#" class="btn btn-whatsapp" id="order-send-whatsapp" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px; vertical-align: middle;">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.73-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.588 1.981 14.117.96 11.493.96 6.058.96 1.633 5.33 1.629 10.76a9.617 9.617 0 0 0 1.5 5.17l-.985 3.597 3.703-.973zm13.167-7.223c-.322-.16-1.905-.938-2.2-1.044-.295-.107-.51-.16-.724.16-.213.32-.827 1.044-1.013 1.258-.185.213-.37.24-.692.08-1.548-.773-2.555-1.353-3.565-3.08-.266-.456.266-.423.76-.1.444.29.56.375.69.585.13.21.065.39-.033.55-.1-.16-.725-1.748-.993-2.39-.26-.624-.526-.54-.724-.55l-.617-.01c-.213 0-.56.08-.853.4-.293.32-1.12 1.092-1.12 2.66 0 1.57 1.147 3.09 1.307 3.297.16.207 2.257 3.447 5.47 4.83.763.328 1.36.525 1.822.67.767.243 1.467.21 2.018.128.614-.09 1.905-.777 2.174-1.492.27-.715.27-1.328.186-1.454-.084-.127-.295-.207-.616-.367z"/>
+                </svg>
+                Enviar Solicitud Mayorista
+              </a>
+              
+              <button class="btn btn-secondary" id="order-print">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px; vertical-align: middle;">
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+                Imprimir / Exportar Nota
+              </button>
+            </div>
+
+            <p class="order-disclaimer">
+              *Mínimo de orden mayorista: 10 bolsas. Los precios no incluyen IVA. Sujeto a disponibilidad de stock al momento de confirmación con el asesor comercial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BRANCHES & BUSINESS HOURS
+       ========================================================================== -->
+  <section class="section-padding schedule-section" id="horarios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Horarios y Sucursales</span>
+        <h2 class="section-title">Canales de Atención</h2>
+        <p style="color: var(--text-secondary);">Conoce nuestros horarios de atención de la distribuidora y la veterinaria minorista.</p>
+      </div>
+
+      <div class="schedule-grid">
+        <!-- Sucursal 1: Resistencia | Corrientes -->
+        <div class="pet-card branch-card">
+          <div class="branch-header">
+            <span class="tape-heading blue-tape">Resistencia | Corrientes</span>
+            <span class="badge" style="margin-bottom:0;">Mayorista Central</span>
+          </div>
+          
+          <div class="branch-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Teniente Bosch 50, Resistencia, Chaco</span>
+          </div>
+          
+          <div class="branch-schedule-list">
+            <div class="schedule-row">
+              <span>Lunes a Viernes</span>
+              <span>8:00 a 12:00 | 16:00 a 20:00</span>
+            </div>
+            <div class="schedule-row" style="background-color: rgba(225, 29, 72, 0.04); color: var(--color-red);">
+              <span>Sábados</span>
+              <span style="font-weight: 800;">Cerrado</span>
+            </div>
+          </div>
+          
+          <a href="https://wa.link/haacwa" class="btn btn-whatsapp" target="_blank" style="margin-top: 20px; width: 100%; padding: 10px 15px; border-radius: var(--border-radius-sm);">
+            Contactar Resistencia | Corrientes
+          </a>
+        </div>
+
+        <!-- Sucursal 2: Formosa Capital | Interior del Chaco -->
+        <div class="pet-card branch-card">
+          <div class="branch-header">
+            <span class="tape-heading blue-tape" style="font-size: 1rem;">Formosa | Chaco Int.</span>
+            <span class="badge" style="margin-bottom:0;">Distribución NEA</span>
+          </div>
+          
+          <div class="branch-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Formosa Capital e Interior de Chaco</span>
+          </div>
+          
+          <div class="branch-schedule-list">
+            <div class="schedule-row">
+              <span>Lunes a Viernes</span>
+              <span>8:00 a 12:00 | 16:00 a 20:00</span>
+            </div>
+            <div class="schedule-row" style="background-color: rgba(225, 29, 72, 0.04); color: var(--color-red);">
+              <span>Sábados</span>
+              <span style="font-weight: 800;">Cerrado</span>
+            </div>
+          </div>
+          
+          <a href="https://wa.link/x7z7wo" class="btn btn-whatsapp" target="_blank" style="margin-top: 20px; width: 100%; padding: 10px 15px; border-radius: var(--border-radius-sm);">
+            Contactar Formosa | Chaco
+          </a>
+        </div>
+
+        <!-- Sucursal 3: Interior de Formosa -->
+        <div class="pet-card branch-card">
+          <div class="branch-header">
+            <span class="tape-heading blue-tape">Interior Formosa</span>
+            <span class="badge" style="margin-bottom:0;">Distribución NEA</span>
+          </div>
+          
+          <div class="branch-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Interior de la Provincia de Formosa</span>
+          </div>
+          
+          <div class="branch-schedule-list">
+            <div class="schedule-row">
+              <span>Lunes a Viernes</span>
+              <span>8:00 a 12:00 | 16:00 a 20:00</span>
+            </div>
+            <div class="schedule-row" style="background-color: rgba(225, 29, 72, 0.04); color: var(--color-red);">
+              <span>Sábados</span>
+              <span style="font-weight: 800;">Cerrado</span>
+            </div>
+          </div>
+          
+          <a href="https://wa.link/d0jr2f" class="btn btn-whatsapp" target="_blank" style="margin-top: 20px; width: 100%; padding: 10px 15px; border-radius: var(--border-radius-sm);">
+            Contactar Interior Formosa
+          </a>
+        </div>
+
+        <!-- Sucursal 4: Veterinaria Minorista -->
+        <div class="pet-card branch-card vet-card-border">
+          <div class="branch-header">
+            <span class="tape-heading red-tape">Veterinaria</span>
+            <span class="badge badge-red" style="margin-bottom:0;">Minorista / Local</span>
+          </div>
+          
+          <div class="branch-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Av. 9 de Julio 4760, Barranqueras, Chaco</span>
+          </div>
+          
+          <div class="branch-schedule-list">
+            <div class="schedule-row">
+              <span>Lunes a Viernes</span>
+              <span>8:30 a 12:30 | 16:00 a 20:00</span>
+            </div>
+            <div class="schedule-row">
+              <span>Sábados</span>
+              <span>8:00 a 13:00</span>
+            </div>
+          </div>
+          
+          <a href="https://wa.link/927k7w" class="btn btn-whatsapp" target="_blank" style="margin-top: 20px; width: 100%; padding: 10px 15px; border-radius: var(--border-radius-sm);">
+            Contactar Veterinaria
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CALL TO ACTION
+       ========================================================================== -->
+  <section class="section-padding cta-section">
+    <div class="cta-content">
+      <span class="badge">Emprende hoy</span>
+      <h2 class="cta-title">¿Listo para abastecer tu negocio de mascotas?</h2>
+      <p class="cta-desc">
+        No te pierdas esta oportunidad de crecer con nosotros. Conversa hoy mismo con un asesor comercial de Pocas Pulgas y recibe tu cotización a medida.
+      </p>
+      <a href="https://wa.me/5493624123456?text=Hola!%20Me%20interesa%20iniciar%20compra%20mayorista%20de%20alimento%20para%20mascotas." class="btn btn-whatsapp btn-lg" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px; vertical-align: middle;">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.73-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.588 1.981 14.117.96 11.493.96 6.058.96 1.633 5.33 1.629 10.76a9.617 9.617 0 0 0 1.5 5.17l-.985 3.597 3.703-.973zm13.167-7.223c-.322-.16-1.905-.938-2.2-1.044-.295-.107-.51-.16-.724.16-.213.32-.827 1.044-1.013 1.258-.185.213-.37.24-.692.08-1.548-.773-2.555-1.353-3.565-3.08-.266-.456.266-.423.76-.1.444.29.56.375.69.585.13.21.065.39-.033.55-.1-.16-.725-1.748-.993-2.39-.26-.624-.526-.54-.724-.55l-.617-.01c-.213 0-.56.08-.853.4-.293.32-1.12 1.092-1.12 2.66 0 1.57 1.147 3.09 1.307 3.297.16.207 2.257 3.447 5.47 4.83.763.328 1.36.525 1.822.67.767.243 1.467.21 2.018.128.614-.09 1.905-.777 2.174-1.492.27-.715.27-1.328.186-1.454-.084-.127-.295-.207-.616-.367z"/>
+        </svg>
+        Registrar Comercio / Contactar
+      </a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="#" class="logo-wrapper" style="filter: none;">
+            <img src="logo.png" alt="Pocas Pulgas Logo" class="logo-icon">
+            <div class="logo-text">
+              POCAS PULGAS
+              <span style="color:var(--color-blue)">Distribuidora Mayorista</span>
+            </div>
+          </a>
+          <p style="margin-top: 15px;">
+            Empresa familiar apasionada por lo que hacemos. Llevando soluciones mayoristas de nutrición animal a todo el NEA argentino.
+          </p>
+          <div class="footer-socials" style="margin-top: 10px;">
+            <a href="#" class="footer-social-icon" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/distpocaspulgas" class="footer-social-icon" aria-label="Instagram" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://wa.me/5493624123456" class="footer-social-icon" aria-label="WhatsApp" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Secciones</h4>
+          <div class="footer-links">
+            <a href="#inicio" class="footer-link-item">Inicio</a>
+            <a href="#emprender" class="footer-link-item">Emprender con Nosotros</a>
+            <a href="#catalogo" class="footer-link-item">Catálogo B2B / Simulador</a>
+            <a href="#horarios" class="footer-link-item">Sucursales y Horarios</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Puntos de Atención</h4>
+          <div class="footer-links">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Distribuidora: Teniente Bosch 50, Resistencia, Chaco</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Veterinaria: Av. 9 de julio 4760, Resistencia, Chaco</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Asistencia Ventas B2B: +54 9 3624-123456</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pocas Pulgas Distribuidora. Todos los derechos reservados.</p>
+        <p>Familia TCG - Nordeste Argentino (NEA).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
